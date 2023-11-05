@@ -1,0 +1,58 @@
+.product {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .image{
+    width:50%;
+  }
+
+  .btn{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(10, 25, 20, 10);
+    transform: .2s;
+  }
+
+  .btn:hover{
+    cursor: pointer;
+    transform: scaleX(1.2);
+  }
+
+  .st-btn{
+    padding:3px 10px;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .product {
+      padding: 10px;
+      max-width: 400px;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(10, 25, 20, 10);
+    transition: transform .2s ease-in-out;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #3e8e41;
+  }

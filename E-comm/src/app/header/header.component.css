@@ -1,0 +1,95 @@
+.nev-container {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+
+.nev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, .logo{
+    font-size: 24px;
+    font-weight: bold;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-clip: text; /* This property will apply the gradient as text color */
+    -webkit-background-clip: text; /* For webkit-based browsers (e.g., Chrome) */
+    color: transparent;
+    margin: 0;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.nev-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nev-items li {
+    margin-left: 20px;
+}
+
+.nev-items li:first-child {
+    margin-left: 0;
+}
+
+.nev-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nev-items a:hover {
+    color: #ff5733; /* An attractive hover color */
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nev-items {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nev-items li {
+        margin: 10px 0;
+    }
+
+    .nev-items a {
+        font-size: 20px;
+    }
+
+    input[type="checkbox"]:checked ~ .nev-items {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+  .parent-container {
+    /* background-image: url('/assets/image/cover1.jpg'); Adjust the path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width:118%; */
+    background-position: center; /* Center the background image */
+    height: 100vh;
+  }
+  
+  .btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  .login-container {
+    width: 100%;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: rgba(168, 167, 167, 0.33);
+    filter: (10px);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-primary {
+    background-color: #30a5ee;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0896ee;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color:rgba(168, 167, 167, 0.33);
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+          
+  @media screen and (max-width: 768px) {
+    h2 {
+        font-size: 6vw;
+    }
+    
+    p {
+        font-size: 4vw;
+    }
+    
+    .login-container {
+        max-width: 90%;
+    }
+}

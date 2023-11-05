@@ -1,0 +1,26 @@
+.container{
+    /* margin: 0; */
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-size: 100%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* body{
+    background-image:url('/assets/image/homeC.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1vh;
+    /* background-position: center; 
+} */
+
+body{
+    background-image: url('/assets/image/cover1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-position: center; /* Center the background image */
+    height: 100vh;
+}
+

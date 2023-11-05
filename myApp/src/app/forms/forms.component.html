@@ -1,0 +1,26 @@
+<form #contactform="ngform" (ngSubmit)="onSubmit(contactform)">
+    <p>
+        <lable for ="firstname">First Name</lable>
+        <input type="text" name="firstname" ngModel>
+    </p>
+    <p>
+        <lable for ="lastname">Last Name</lable>
+        <input type="text" name="lastname" ngModel>
+    </p>
+    <p>
+        <lable for ="email">Email</lable>
+        <input type="text" name="email" ngModel>
+    </p>
+    <p>
+        <lable for ="gender">Gender</lable>
+        <input type="radio" value="male" name="gender" ngModel>Male
+        <input type="radio" value="female" name="gender" ngModel>Female
+    </p>
+    <p>
+        <lable for ="isMarried">Is Married</lable>
+        <input type="checkbox" name="isMarried" ngModel>
+    </p>
+    <select name="country" ngModel>
+        <option [ngValue]="c.id" *ngFor="let c of countries">{{c.name}}</option>
+    </select>
+</form>

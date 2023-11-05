@@ -1,0 +1,26 @@
+<div class="product">
+    <img class="phone" src="./assets/images/phone.webp" alt="Description of image"><br>
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.description }}</p>
+    <p>Price (incl. GST): {{ (product.price * (1 + product.gst/100)) | currency }}</p>
+    <p>Gst:{{product.gst}}</p>
+    <p>Second Pic:{{product.image}}</p>
+    <div class="quantity">
+      <button class="st-btn" (click)="decreaseQuantity()">-</button>
+      <span>{{ quantity }}</span>
+      <button class="st-btn" (click)="increaseQuantity()">+</button>
+    </div>
+    <p *ngIf="quantity > 0; else outOfStock">In Stock</p>
+    <ng-template #outOfStock>Out of Stock</ng-template>
+    <button class="btn" [disabled]="quantity === 0"> Buy Now</button>
+    <br><br>
+    <input type="text" value="{{product.name}}"
+    (mouseover)="changeName1()" (mouseout)="changeName2()">
+    <br><br>
+    <button [ngStyle]="{'background-color': 'red','color':'white'}">Deliver to this address</button>
+    <!-- <button [ngStyle]="{'background-color': product.inStock>0 ? 'green' : 'red'}">Deliver to this address</button> -->
+    <p *ngFor="let x of ourReviewList">
+      {{x.name}} -> {{x.review}}
+    </p>
+  </div>
+  
